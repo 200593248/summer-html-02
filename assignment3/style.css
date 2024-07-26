@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.poster {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.poster img {
+    width: 100%;
+    height: auto;
+}
+
+header, footer {
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+header {
+    top: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: -22%;
+    left:55%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 5px 4px #000;
+}
+
+h1 {
+    font-size: 6px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 10px;
+    margin: 5px 0;
+    font-family: 'Armata', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 52px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 5px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.links {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 70px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
