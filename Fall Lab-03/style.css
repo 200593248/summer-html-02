@@ -1,0 +1,65 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.svg-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+}
+
+.button-svg {
+    fill: #ff6f61;
+    transition: fill 0.3s ease;
+}
+
+.button-background {
+    stroke: #ff6f61;
+    stroke-width: 2;
+    transition: fill 0.3s ease, stroke-width 0.3s ease;
+    fill: transparent;
+}
+
+.svg-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff6f61;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.svg-button:hover .button-background {
+    fill: #ff6f61;
+    stroke-width: 3;
+}
+
+.svg-button:hover span {
+    color: #fff;
+}
+
+.svg-button:active .button-background {
+    fill: #d9534f;
+    stroke: #d9534f;
+    stroke-width: 3;
+}
