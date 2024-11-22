@@ -1,36 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-    If in pairs add names here
-    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is the HTML for Lab Two">
-    <title>Lab Two</title>
+    <meta name="description" content="Assignment-1">
     <meta name="robots" content="noindex, nofollow">
-    <!-- Step one -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Snickers Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Step two & three -->
-<h1>I am the main heading</h1>
-<h2>This is the sub-heading</h2>
-<!-- Step four & five -->
-<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Alias, blanditiis culpa itaque neque nulla officia perspiciatis quam quos saepe sint temporibus voluptas voluptatem voluptates! Aperiam commodi consequatur debitis doloremque, eaque eius eum exercitationem expedita facilis fugiat illo illum nihil odit officia quos rem saepe soluta, unde. Ad aliquam autem blanditiis consectetur, eius esse, est et eum, facilis illo incidunt ipsum iusto molestiae molestias mollitia nemo nobis numquam pariatur quaerat qui quod quos unde voluptas voluptate.</p>
-<a href="#">This is a link</a>
-<ul>
-    <li>List Item One</li>
-    <li>List Item Two</li>
-    <li>List Item Three</li>
-</ul>
-<!-- Step six -->
-<h3>This is an h3</h3>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="download.png" alt="Snickers Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Support</a></li>
+                <li><a href="#login" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Snickers</h1>
+    <p>Fuel your hunger with the delicious taste of Snickers!</p>
+    <a href="#products" class="btn-primary">Explore Products</a>
+</section>
+
+<section id="about" class="section">
+    <h2>About Snickers</h2>
+    <p>Snickers is the world’s best-selling candy bar, satisfying hunger with a combination of nougat, caramel, peanuts, and milk chocolate.</p>
+    <img src="download.jpg" alt="Snickers Bar">
+</section>
+
+<section id="products" class="section">
+    <h2>Our Products</h2>
+    <p>Discover our range of Snickers bars and treats to satisfy your cravings.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Support</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn-primary">Submit</button>
+    </form>
+</section>
+
+<section id="login" class="section">
+    <h2>Login</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit" class="btn-primary">Login</button>
+    </form>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Snickers. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
